@@ -1,0 +1,4 @@
+## Append samples you want in your CSV to this file as resources ##
+resources:
+- prueba_v1beta1_santip.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

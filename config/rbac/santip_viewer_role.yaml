@@ -1,0 +1,20 @@
+# permissions for end users to view santips.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: santip-viewer-role
+rules:
+- apiGroups:
+  - prueba.my.domain
+  resources:
+  - santips
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - prueba.my.domain
+  resources:
+  - santips/status
+  verbs:
+  - get
